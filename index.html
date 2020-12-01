@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Connect 4</title>
+  <link rel="icon" href="connect4.png">
+  <link rel="stylesheet" type="text/css" href="index.css">
+ 
+</head>
+<body>
+
+<h1>Connect 4</h1>
+
+<!--7columns X 6 rows-->
+<div id="gamepanel">
+  <table id="gametable"  onmousedown="myFunction(event)" onmouseup="isWin()">
+    <tr id="row0" class="row">
+      <td id="slot00" class="col0"></td>
+      <td id="slot01" class="col1"></td>
+      <td id="slot02" class="col2"></td>
+      <td id="slot03" class="col3"></td>
+      <td id="slot04" class="col4"></td>
+      <td id="slot05" class="col5"></td>
+      <td id="slot06" class="col6"></td>
+    </tr>
+    <tr id="row1" class="row">
+      <td id="slot10" class="col0"></td>
+      <td id="slot11" class="col1"></td>
+      <td id="slot12" class="col2"></td>
+      <td id="slot13" class="col3"></td>
+      <td id="slot14" class="col4"></td>
+      <td id="slot15" class="col5"></td>
+      <td id="slot16" class="col6"></td>
+    </tr>
+    <tr id="row2" class="row">
+      <td id="slot20" class="col0"></td>
+      <td id="slot21" class="col1"></td>
+      <td id="slot22" class="col2"></td>
+      <td id="slot23" class="col3"></td>
+      <td id="slot24" class="col4"></td>
+      <td id="slot25" class="col5"></td>
+      <td id="slot26" class="col6"></td>
+    </tr>
+    <tr id="row3" class="row">
+      <td id="slot30" class="col0"></td>
+      <td id="slot31" class="col1"></td>
+      <td id="slot32" class="col2"></td>
+      <td id="slot33" class="col3"></td>
+      <td id="slot34" class="col4"></td>
+      <td id="slot35" class="col5"></td>
+      <td id="slot36" class="col6"></td>
+    </tr>
+    <tr id="row4" class="row">
+      <td id="slot40" class="col0"></td>
+      <td id="slot41" class="col1"></td>
+      <td id="slot42" class="col2"></td>
+      <td id="slot43" class="col3"></td>
+      <td id="slot44" class="col4"></td>
+      <td id="slot45" class="col5"></td>
+      <td id="slot46" class="col6"></td>
+    </tr>
+    <tr id="row5" class="row">
+      <td id="slot50" class="col0"></td>
+      <td id="slot51" class="col1"></td>
+      <td id="slot52" class="col2"></td>
+      <td id="slot53" class="col3"></td> 
+      <td id="slot54" class="col4"></td>
+      <td id="slot55" class="col5"></td>
+      <td id="slot56" class="col6"></td>
+    </tr>
+  </table>
+</div>
+<div class="button">
+  <button onclick="reset()" >New game</button>
+  <button onclick="takeback()">Reverse</button>
+    <button onclick= "save()">Save</button>
+    <label class="custom-file-upload">
+    <input id="file" type="file"/>
+    Resume 
+</label>
+</div>
+
+
+</script>
+    <script src="index.js"></script>
+
+  </body></html>
