@@ -80,7 +80,10 @@ function reset(){
 function myFunction(event) { 
     
     var s=event.target.getAttribute("id");
-    if(s=="gametable") return;
+    if(s=="gametable"){
+        window.alert("Not a valid column position!")
+        return;
+    }
     for(var i=0;i<tableCells.length;i++){
         var slotId=tableCells[i].getAttribute("id");
         if(s==slotId){
